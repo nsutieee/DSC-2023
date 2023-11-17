@@ -1,18 +1,27 @@
-import React from 'react'
+"use client"
+
+import React, { useRef } from 'react'
+import './BrandingVideo.css'
+import {motion,useScroll, useTransform} from 'framer-motion'
 
 const BrandingVideo = () => {
+    const ref =useRef(null);
+
+    const{scrollYProgress}=useScroll({
+        target:ref,
+        offset:["start end","end end"]
+    })
+    const scale =useTransform(scrollYProgress,[0,1],[0.6,1])
   return (
-    <div>
       <div className='bv-container'>
-      <div>
-        <video 
-        loop muted autoPlay controls="">
+      <div className='container'>
+        <motion.video className='bv-video'
+        ref={ref} loop muted autoPlay controls="" style={{scale}}>
             <source src="/video.mp4" type='video/mp4'/>
-        </video>
+        </motion.video>
       </div>
 
       </div>
-    </div>
   )
 }
 
