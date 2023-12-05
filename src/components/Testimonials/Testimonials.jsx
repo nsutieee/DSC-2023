@@ -8,9 +8,9 @@ const Testimonials = () => {
        <div className='container'>
            <div className='t-container'>
               <div className='t-head'>
-                 <span className='tag'>test1</span>
-                 <span className='title'>info</span>
-                 <span className='des'>info more</span>
+                 <span className='tag'>speak from our experts</span>
+                 <span className='title'>Testimonials</span>
+                 <span className='des'>kuch bhi likhod thoda bada sa</span>
               </div>
 
            </div>

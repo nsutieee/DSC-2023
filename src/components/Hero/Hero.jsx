@@ -99,9 +99,9 @@ const Hero = () => {
                  <div className='h-right'>
                  {/* right side */}
                     <div className='h-title'>
-                        <span>ieee</span>
-                        <span>dcs </span>
-                        <span>idk</span>
+                        <span>ieee nsut</span>
+                        <span>dcs week description one line </span>
+                        <span>kuch kuch</span>
                     </div>    
                     <div className='h-des'>
                     lorem ispum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud

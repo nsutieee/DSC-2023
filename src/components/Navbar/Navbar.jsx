@@ -34,9 +34,9 @@ const Navbar = () => {
           {/* right side */}
           <div className='n-right'>
             <div className='n-menu'>
-            <Link to="wwd-wrapper" spy={true} smooth={true}><span>what we do?</span></Link>
-            <Link to="hiw-wrapper" spy smooth offset={100} ><span>How it works?</span></Link>
-            <Link to= "wwi-wrapper" spy smooth><span>Who we invest?</span></Link>
+            <Link to="wwd-wrapper" spy={true} smooth={true}><span>what is DSC?</span></Link>
+            <Link to="hiw-wrapper" spy smooth offset={100} ><span>How DSC works?</span></Link>
+            <Link to= "wwi-wrapper" spy smooth><span>About</span></Link>
             <Link to="t-wrapper" spy smooth offset={100}> <span>Testimonials</span></Link>
       
 
@@ -65,9 +65,9 @@ const Navbar = () => {
         {/* mobile menu */}
         <div className='nm-menu'
         style={{transform: mobileMenuOpened && "translateX(0%)"}}>
-<Link onClick={()=>setMobileMenuOpened(false)} to="wwd-wrapper" spy={true} smooth={true}><span>what we do?</span></Link>
-<Link onClick={()=>setMobileMenuOpened(false)} to="hiw-wrapper" spy smooth offset={100} ><span>How it works?</span></Link>
-<Link onClick={()=>setMobileMenuOpened(false)} to= "wwi-wrapper" spy smooth><span>Who we invest?</span></Link>
+<Link onClick={()=>setMobileMenuOpened(false)} to="wwd-wrapper" spy={true} smooth={true}><span>what is DSC?</span></Link>
+<Link onClick={()=>setMobileMenuOpened(false)} to="hiw-wrapper" spy smooth offset={100} ><span>How DSC works?</span></Link>
+<Link onClick={()=>setMobileMenuOpened(false)} to= "wwi-wrapper" spy smooth><span>ABOUT</span></Link>
 <Link onClick={()=>setMobileMenuOpened(false)} to="t-wrapper" spy smooth offset={100}> <span>Testimonials</span></Link>
             <div className='m-funded-button'>button</div>
         </div>

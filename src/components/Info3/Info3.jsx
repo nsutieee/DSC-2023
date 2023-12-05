@@ -31,13 +31,13 @@ const Info3 = () => {
               variants={tagVariants}
               // initial="offscreen"
               // WhileInView={"onscreen"}
-              className='tag'>test1</motion.span>
+              className='tag'>info heading thodi badi</motion.span>
 
               <motion.span
               variants={titleVariants}
               // initial="offscreen"
               // WhileInView={"onscreen"}
-               className='title'>test2</motion.span>
+               className='title'>thodi choti heading</motion.span>
 
           </div>
 
