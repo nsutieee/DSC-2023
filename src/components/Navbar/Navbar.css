@@ -88,7 +88,7 @@
         z-index: 99;
         height: calc(100vh - 3.9rem);
     }
-    .nm-menu span{
+    .nm-menu a{
         margin-bottom: 2rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid var(--border-color);
@@ -105,3 +105,17 @@
         color: var(--dark-bg);
     }
 }
+
+.sticky{
+    position: fixed;
+    background: white;
+    top: 0;
+    box-shadow: 10px 12px 48px rgba(181,187,203,206);
+}
+
+.sticky .n-container{
+    color: var(--title-color);
+    padding: 1rem;
+}
+
+

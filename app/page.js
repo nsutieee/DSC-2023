@@ -9,6 +9,7 @@ import { motion,useAnimation } from "framer-motion";
 import Info3 from '@/src/components/Info3/Info3';
 import Teacher from '@/src/components/Teacher/Teacher';
 import Testimonials from '@/src/components/Testimonials/Testimonials';
+import Footer from '@/src/components/Footer/Footer';
 
 
 export default function Home() {
@@ -50,6 +51,7 @@ export default function Home() {
     </motion.div>
 
     <Testimonials/>
+    <Footer/>
     </motion.div>
 
   );
