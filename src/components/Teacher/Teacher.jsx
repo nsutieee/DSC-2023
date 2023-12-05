@@ -53,7 +53,7 @@ const teacher = () => {
                     variants={containerVariants(0.5)}
                     initial="offscreen"
                     whileInView={"onscreen"}
-                     src="persons.png" alt='persons'/>
+                     src="persons.jpeg" alt='persons'/>
                 </div>
          </div>
       </div>
