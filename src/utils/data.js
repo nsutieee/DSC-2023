@@ -116,25 +116,25 @@ export const whoWeInvest = [
 export const testimonialsData = [
   {
     comment:
-      "testimonials 1 ",
+      "lorem ispum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
     name: "bhupinder jogi",
     profession: "architect",
   },
   {
     comment:
-      "ek aur testimonaial",
+      "lorem ispum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
     name: "bhupinder jogi",
     profession: "Founder",
   },
   {
     comment:
-      "ek aur aur testimonaial",
+      "lorem ispum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
     name: "bhupinder jogi",
     profession: "Director",
   },
   {
     comment:
-      "ek aur aur aur  testiomoinial",
+      "lorem ispum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
     name: "bhupinder jogi",
     profession: "Manager, ",
   },
