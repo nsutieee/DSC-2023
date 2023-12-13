@@ -1,28 +1,34 @@
-"use client"
+"use client";
 
-import React, { useRef } from 'react'
-import './BrandingVideo.css'
-import {motion,useScroll, useTransform} from 'framer-motion'
+import React, { useRef } from "react";
+import "./BrandingVideo.css";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const BrandingVideo = () => {
-    const ref =useRef(null);
+  const ref = useRef(null);
 
-    const{scrollYProgress}=useScroll({
-        target:ref,
-        offset:["start end","end end"]
-    })
-    const scale =useTransform(scrollYProgress,[0,1],[0.6,1])
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end end"],
+  });
+  const scale = useTransform(scrollYProgress, [-0.6, 1], [0, 1]);
   return (
-      <div className='bv-container'>
+    <div className='bv-container'>
       <div className='container'>
-        <motion.video className='bv-video'
-        ref={ref} loop muted autoPlay controls="" style={{scale}}>
-            <source src="/video.mp4" type='video/mp4'/>
+        <motion.video
+          className='bv-video'
+          ref={ref}
+          loop
+          muted
+          controls
+          autoPlay
+          style={{ scale }}
+        >
+          <source src='/video.mp4' type='video/mp4' />
         </motion.video>
       </div>
+    </div>
+  );
+};
 
-      </div>
-  )
-}
-
-export default BrandingVideo
+export default BrandingVideo;

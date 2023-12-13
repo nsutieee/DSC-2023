@@ -1,36 +1,157 @@
-import React from 'react'
-import './Footer.css'
-import { transform } from 'framer-motion'
-import {motion,useMotionValueEvent,useScroll} from 'framer-motion'
-import {Link} from 'react-scroll'
+import React, { useEffect } from "react";
+import "./Footer.css";
+import SocialFollow from "./Socials";
+import { FaDiscord } from "react-icons/fa";
 
-const Footer = () => {
+function Footer() {
   return (
-    <div className='f-wrapper'>
-       <div className='container'>
-          <div className='f-container'>
-               <span className='title'>IEEE NSUT WELCOMES YOU</span>
-
-               <hr/>
-               <div className='f-menu'>
-               <Link to="h-container" spy={true} smooth={true}><span>Home</span></Link>
-                  {/* <span>What we do</span>
-                  <span>How it works</span>
-                  <span>some info</span>
-                  <span>Testimonials</span> */}
-                  <Link to="wwd-wrapper" spy={true} smooth={true}><span>what is DSC?</span></Link>
-            <Link to="hiw-wrapper" spy smooth offset={100} ><span>How DSC works?</span></Link>
-            <Link to= "wwi-wrapper" spy smooth><span>About</span></Link>
-            <Link to="t-wrapper" spy smooth offset={100}> <span>Testimonials</span></Link>
-               </div>
-               <hr/>
+    <footer style={{ backgroundColor: "black" }}>
+      <div className='row'>
+        <div className='col'>
+          <div className='logos_wrap'>
+            <div>
+              <img src='/ieee-logo.png' className='logo' alt='' />
+            </div>
+            <div></div>
           </div>
+          <div>
+            &copy; Copyright IEEE - All rights reserved. A not-for-profit
+            organization, IEEE is the world&apos;s largest technical
+            professional organization dedicated to advancing technology for the
+            benefit of humanity.
+          </div>
+        </div>
+        <div className='col brd'>
+          <h3 className='footerhead'>
+            Address{" "}
+            <div className='underline'>
+              <span></span>
+            </div>
+          </h3>
+          <div>Netaji Subhas University of Technology</div>
+          <div>Sector -3, Dwarka</div>
+          <div>New Delhi - 110078</div>
+          <div className='email'>
+            <a href='mailto:techweek.ieeensut@gmail.com'>
+              techweek.ieeensut@gmail.com
+            </a>
+          </div>
+          Prerna Yadav
+          <br />
+          SECTION STUDENT REPRESENTATIVE : +91 99999 99999
+          <br />
+          Ashmita <br />
+          SECTION STUDENT REPRESENTATIVE : +91 99999 99999
+        </div>
+        <div className='col brd'>
+          <h3>
+            Links{" "}
+            <div className='underline'>
+              <span></span>
+            </div>
+          </h3>
+          <ul id='util'>
+            <li>
+              <a href='http://www.ieee.org/index.html' id='u-home'>
+                Home
+              </a>{" "}
+            </li>
+            <li>
+              <a href='http://www.ieee.org/sitemap.html' id='u-home'>
+                Sitemap/More Sites
+              </a>{" "}
+            </li>
+            <li>
+              <a
+                href='http://www.ieee.org/about/contact_center/index.html'
+                id='u-contact'
+              >
+                Contact
+              </a>{" "}
+            </li>
+            <li>
+              <a
+                href='http://www.ieee.org/accessibility_statement.html'
+                id='u-accessibility'
+              >
+                Accessibility
+              </a>{" "}
+            </li>
+            <li>
+              <a href='http://www.ieee.org/p9-26.html' id='u-non'>
+                Nondiscrimination Policy
+              </a>
+            </li>
+            <li>
+              <a
+                href='http://ieee-ethics-reporting.org/'
+                id='u-ethics-reporting'
+              >
+                IEEE Ethics Reporting
+              </a>
+            </li>
+            <li>
+              <a
+                href='http://www.ieee.org/security_privacy.html'
+                id='u-privacy'
+              >
+                IEEE Privacy Policy
+              </a>
+            </li>
 
+            <li>
+              <a
+                href='https://www.ieee.org/about/help/site-terms-conditions.html'
+                id='u-terms'
+              >
+                Terms
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className='col'>
+          {/* <div
+            className="apply-button"
+            data-hackathon-slug="hacknsut-5"
+            data-button-theme="dark"
+            style={{ height: 44 + "px", width: 312 + "px" }}
+          ></div> */}
+          <a
+            href='https://discord.gg/KX52TkVMsW'
+            target={"_blank"}
+            className='discord_wrap'
+          >
+            <FaDiscord className='discord_icon' />
+            <div className='discord_txt'>Join Discord</div>
+          </a>
+          <div className='social'>
+            <SocialFollow />
+          </div>
+          <div style={{ marginTop: "30px" }}>
+            <div className='insu'>Interested in sponsoring us?</div>
+            <a href='https://forms.gle/XWa6phMgNug75kPq7' target={"_blank"}>
+              <button
+                className='btn btn1 brochure'
+                style={{ marginTop: "20px" }}
+              >
+                Sponsor Us
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr></hr>
 
-       </div>
-      
-    </div>
-  )
+      <a
+        href={"https://devfolio.co/code-of-conduct"}
+        target={"_blank"}
+        style={{ textDecoration: "none", color: "white" }}
+      >
+        <p className='copyright'>Code of Conduct</p>{" "}
+      </a>
+      <p className='copyright'>IEEE © 2023 - All Rights Reserved</p>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

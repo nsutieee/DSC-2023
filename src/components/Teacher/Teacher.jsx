@@ -1,64 +1,72 @@
-import React from 'react'
-import './Teacher.css'
-import { whoWeInvest } from '@/src/utils/data'
-import { motion } from 'framer-motion'
-import { containerVariants, tagVariants, titleVariants } from '@/src/utils/animation'
+import React from "react";
+import "./Teacher.css";
+import { whoWeInvest } from "@/src/utils/data";
+import { motion } from "framer-motion";
+import {
+  containerVariants,
+  tagVariants,
+  titleVariants,
+} from "@/src/utils/animation";
 
 const teacher = () => {
   return (
     <div className='wwi-wrapper'>
       <div className='container'>
-         <div className='wwi-container'>
-                {/* left side */}
-                <div className='wwi-left'>
-                    <div className='head'>
-                        <motion.span
-                        variants={tagVariants}
-                        initial="offscreen"
-                        whileInView={"onscreen"}
-                         className='tag'>choti heading</motion.span>
+        <div className='wwi-container'>
+          {/* left side */}
+          <div className='wwi-right'>
+            <motion.img
+              variants={containerVariants(0.5)}
+              initial='offscreen'
+              whileInView={"onscreen"}
+              src='persons.jpeg'
+              alt='persons'
+            />
+          </div>
+          {/* right side */}
 
-                        <motion.span
-                        variants={titleVariants}
-                        initial="offscreen"
-                        whileInView={"onscreen"}
-                         className='title'>badi heading</motion.span>
-                    </div>
+          <div className='wwi-left'>
+            <div className='head'>
+              <motion.p
+                variants={titleVariants}
+                initial='offscreen'
+                whileInView={"onscreen"}
+                className='tag'
+              >
+                POR
+              </motion.p>
 
-                    {/* features */}
-                    <div className='wwi-features'>
-                    {
-                        whoWeInvest.map((feature,i)=>(
-                            <motion.div 
-                            variants={containerVariants(i*0.05 + 1)}
-                            initial="offscreen"
-                            whileInView={"onscreen"}
-                            className='wwi-feature' key={i}>
-                                <span className='des'>{feature.title}</span>
+              <motion.span
+                variants={titleVariants}
+                initial='offscreen'
+                whileInView={"onscreen"}
+                className='title'
+              >
+                Prerna Guar Mam
+              </motion.span>
+            </div>
 
-                                <span className='text'>{feature.des}</span>
-                            </motion.div>
-
-                        ))
-                    }
-
-                    </div>
-
-                </div>
-
-
-                {/* right side */}
-                <div className='wwi-right'>
-                    <motion.img
-                    variants={containerVariants(0.5)}
-                    initial="offscreen"
-                    whileInView={"onscreen"}
-                     src="persons.jpeg" alt='persons'/>
-                </div>
-         </div>
+            {/* features */}
+            <div className='wwi-features'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus veniam id nulla ad repellendus? Cumque a in
+              recusandae quas tempora inventore exercitationem omnis? Molestias
+              commodi dolor qui blanditiis quae? Blanditiis similique nihil
+              voluptate ex rerum eligendi inventore laudantium modi quia
+              doloribus porro culpa sit, delectus nobis vitae sint quibusdam
+              harum unde qui iste quos eaque, provident ullam. Aspernatur in
+              iure accusantium blanditiis dolorum ad molestias provident, magnam
+              nulla, magni dignissimos vitae impedit perferendis, aut nisi?
+              Culpa, sequi voluptates impedit nesciunt fuga consequuntur
+              inventore pariatur quasi autem molestias nisi ducimus voluptatum
+              saepe. Qui voluptatibus officia animi hic nostrum expedita totam
+              fugit.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default teacher
+export default teacher;

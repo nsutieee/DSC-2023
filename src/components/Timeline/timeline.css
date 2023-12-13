@@ -1,0 +1,54 @@
+:root {
+    --div-primary-color: #0ae0e5;
+    --div-secondary-color: #0aacfc;
+    --div-background-color: black;
+    --div-background2-color: #ffffff;
+
+    --div-headingtext-font: 'Orbitron', sans-serif;
+    --div-contenttext-font: 'Gugi', sans-serif;
+}
+
+
+#timeline {
+    margin: 20vh 0 0;
+}
+
+.vertical-timeline-element-title {
+    font-family: var(--div-contenttext-font);
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date {
+    font-family: var(--div-contenttext-font);
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
+    color: var(--div-primary-color);
+    font-weight: 400;
+}
+
+
+
+.timeline-heading {
+    font-family: var(--div-contenttext-font);
+    text-align: center;
+    color: #0ae0e5;
+    font-size: 3vw;
+    padding: 16px;
+}
+
+.sponsor-heading {
+    font-family: var(--div-headingtext-font);
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.button-box .btn {
+    border-radius: 20px;
+    background-color: var(--div-primary-color);
+    padding: 15px 20px;
+    /* cursor: pointer; */
+}

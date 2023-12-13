@@ -1,48 +1,258 @@
-.f-wrapper .container{
-    margin-top: 5rem;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
 }
 
-.f-wrapper{
-    background-color: var(--primary-color);
-}
-
-.f-container{
+.logos_wrap {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
     align-items: center;
+    margin-top: 0px;
 }
 
-.f-container{
-    color: white;
+.insu {
+    font-size: 20px;
+    font-weight: bolder;
+
 }
 
-.f-container hr{
-    border-color: var(--border-color-right);
-    width: 100%;
+.logo_nsut {
+    max-width: 15vw;
+    max-height: 15vh;
 }
 
-.f-menu{
+.discord_wrap {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.f-menu span{
+    align-items: center;
     color: white;
-    text-transform: uppercase;
-    font-size: 0.9rem;
+    text-decoration: none;
+    font-size: 20px;
     font-weight: bold;
+    justify-content: center;
+    background-color:
+        #26333f;
+    padding: 10px;
+    cursor: pointer;
 }
 
-@media (max-width : 990px){
-    .f-menu{
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
+.discord_txt {
+    margin-left: 10px
+}
+
+footer {
+    margin-top: 120px;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+    padding: 30px 40px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+footer .logo {
+    max-width: 20vw;
+    max-height: 20vh;
+
+}
+
+.row {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.col {
+    text-align: left;
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.email {
+    width: fit-content;
+    /* border-bottom: 1px solid #ccc; */
+    margin: 20px 0;
+}
+
+.email a {
+
+    color: #fff;
+
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    border: 5px;
+    /* margin-top: 50px; */
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'montserrat';
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    /* overflow: hidden; */
+    /* margin: 0 1rem; */
+    background-color: #27333f;
+
+}
+
+
+
+.btn1 {
+    color: #fff;
+}
+
+.btn1:hover {
+    color: rgb(51, 48, 48);
+    background-color: #eeebf3;
+    border: 1px solid #27333f;
+}
+
+/* btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #fff;
+    z-index: -1;
+    transition: 0.8s;
+    color: #2d0b00;
+} */
+
+.btn1::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 180%;
+
+}
+
+.col p {
+    font-size: 16px;
+}
+
+btn1::before:hover {
+    height: 180%;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
     }
 }
 
+@media (max-width: 700px) {
+    footer {
+        bottom: unset;
+    }
+
+    .col {
+        text-align: left;
+        flex-basis: 100%;
+
+    }
+
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+}
+
+.spacing {
+    height: 20vh;
+}
+
+/* .brd{
+    border-left: 1px solid #ccc;
+    padding-left: 10px ;
+} */
+.copyright {
+    text-align: center;
+}
+
+.footerhead {
+    margin-bottom: 5px;
+}
+
+
+p {
+    font-size: .9em;
+    line-height: 120%;
+    padding: 0 0 10px 0;
+    border: 0;
+    margin: 0;
+}
+
+
+#util {
+    color: white;
+    text-align: left;
+}
+
+#util a:link,
+#util a:visited,
+#util a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#util a:hover {
+    text-decoration: underline;
+}
