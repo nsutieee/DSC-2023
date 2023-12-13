@@ -29,7 +29,7 @@ function Footer() {
             </div>
           </h3>
           <div>Netaji Subhas University of Technology</div>
-          <div>Sector -3, Dwarka</div>
+          <div>Sector -3,Dwarka</div>
           <div>New Delhi - 110078</div>
           <div className='email'>
             <a href='mailto:techweek.ieeensut@gmail.com'>
