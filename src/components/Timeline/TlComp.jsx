@@ -7,16 +7,16 @@ import "react-vertical-timeline-component/style.min.css";
 
 function TlComp({ data }) {
   const iconStyles = [
-    { background: "#0ae0e5", color: "#fff" },
+    { background: "var(--title-color)", color: "#fff" },
     { background: "white", color: "#fff" },
   ];
   const contentStyles = [
-    { background: "#2f363e", color: "#0ae0e5" },
-    { background: "white", color: "#2f363e" },
+    { background: "var(--dark-bg)", color: "#var(--title-color)" },
+    { background: "var(--light-bg)", color: "var(--text-color-dark)" },
   ];
   const arrowStyles = [
-    { borderRight: "7px solid  #0ae0e5" },
-    { borderRight: "7px solid  #0aacfc" },
+    { borderRight: "7px solid  var(--dark-bg)" },
+    { borderRight: "7px solid  var(--light-bg)" },
   ];
   return (
     <VerticalTimeline>

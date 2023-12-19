@@ -78,7 +78,7 @@ footer .logo {
 
 .col:nth-child(2),
 .col:nth-child(3) {
-    flex-basis: 15%;
+    flex-basis: 18%;
 }
 
 .email {
@@ -159,7 +159,6 @@ btn1::before:hover {
 }
 
 hr {
-    width: 90%;
     border: 0;
     border-bottom: 1px solid #ccc;
     margin: 20px auto;

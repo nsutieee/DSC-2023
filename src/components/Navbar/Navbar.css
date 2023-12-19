@@ -7,7 +7,7 @@
 }
 
 .n-container {
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem !important;
     color: white;
     font-size: 1rem;
     display: flex;
@@ -18,6 +18,8 @@
 .n-logo {
     font-weight: bold;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -112,14 +114,14 @@
     }
 }
 
-.sticky {
+.nav-sticky {
     position: fixed;
     background: white;
     top: 0;
     /* box-shadow: 10px 12px 48px rgba(181,187,203,206); */
 }
 
-.sticky .n-container {
-    color: var(--title-color);
+.nav-sticky .n-container {
+    color: var(--text-color-dark);
     padding: 1rem;
 }

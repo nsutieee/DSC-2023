@@ -2,7 +2,7 @@
     padding-top: 5rem;
 }
 
-.od-conatiner {
+.od-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -28,7 +28,6 @@
 
 .od-features {
     display: flex;
-    gap: 2rem;
 }
 
 .od-feature {

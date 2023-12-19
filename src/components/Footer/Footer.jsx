@@ -32,16 +32,15 @@ function Footer() {
           <div>Sector -3,Dwarka</div>
           <div>New Delhi - 110078</div>
           <div className='email'>
-            <a href='mailto:techweek.ieeensut@gmail.com'>
-              techweek.ieeensut@gmail.com
-            </a>
+            <a href='mailto:techweek.ieeensut@gmail.com'>ieee@nsut.ac.in</a>
           </div>
-          Prerna Yadav
+          <b>Prerna Yadav</b>
           <br />
-          SECTION STUDENT REPRESENTATIVE : +91 99999 99999
+          Section Student Representative : +91 99999 99999
           <br />
-          Ashmita <br />
-          SECTION STUDENT REPRESENTATIVE : +91 99999 99999
+          <b>Ashmita</b>
+          <br />
+          Section Student Representative : +91 99999 99999
         </div>
         <div className='col brd'>
           <h3>

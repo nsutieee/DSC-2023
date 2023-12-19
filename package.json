@@ -20,15 +20,27 @@
     "eslint-config-next": "13.4.16",
     "framer-motion": "^10.15.2",
     "framer-motion-3d": "^10.16.16",
+    "iconsax-react": "^0.0.8",
+    "lottie-react": "^2.4.0",
+    "moment": "^2.29.4",
     "next": "13.4.16",
     "react": "18.2.0",
+    "react-countup": "^6.5.0",
     "react-dom": "18.2.0",
     "react-hook": "^0.0.1",
     "react-icons": "^4.10.1",
+    "react-masonry-css": "^1.0.16",
     "react-scroll": "^1.8.9",
+    "react-scroll-trigger": "^0.6.14",
     "react-slick": "^0.29.0",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.69.5",
-    "three": "^0.159.0"
+    "three": "^0.159.0",
+    "typewriter-effect": "^2.21.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6"
   }
 }

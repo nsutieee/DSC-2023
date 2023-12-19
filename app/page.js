@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import Navbar from "@/src/components/Navbar/Navbar";
 import "./page.css";
 import Hero from "@/src/components/Hero/Hero";
@@ -12,18 +13,18 @@ import Testimonials from "@/src/components/Testimonials/Testimonials";
 import Footer from "@/src/components/Footer/Footer";
 import Timeline from "@/src/components/Timeline/timeline";
 import TopNav from "@/src/components/TopNav/TopNav";
-import EmailBox from "@/src/components/EmailBox/EmailBox";
-
+import Gallery from "@/src/components/Gallery/Gallery";
+import AboutDSC from "@/src/components/aboutDSC/aboutDSC";
 export default function Home() {
   const controls = useAnimation();
 
   return (
-    <div>
+    <div className='bg-gradient'>
       <TopNav />
+
       <motion.div className='app' animate={controls}>
         <motion.div
           animate={controls}
-          className='bg-gradient'
           style={{
             background: "",
           }}
@@ -33,7 +34,7 @@ export default function Home() {
         </motion.div>
         <BrandingVideo />
         <Info />
-
+        <AboutDSC />
         <motion.div
         // onViewportEnter={() =>
         //   controls.start({
@@ -84,6 +85,8 @@ export default function Home() {
         >
           <Teacher />
         </motion.div>
+
+        <Gallery />
 
         <Testimonials />
 

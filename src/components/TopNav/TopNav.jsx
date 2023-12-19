@@ -16,14 +16,11 @@ function TopNav() {
           <a href='https://www.ieee.org/sitemap.html'>More Sites</a>
         </p>
 
-        <p id='meta-ieee-logo'>
-          <a href='https://www.ieee.org/'>
-            <img src='/ieee-logo.png' />
-            {/* <Image /> */}
-          </a>
+        <p id='ieee-meta-a'>
           <a href='https://www.ieee.org/join' className='joinIEEE'>
             Join IEEE
-          </a>
+          </a>{" "}
+          <img src='/ieee-logo.png' />
         </p>
       </div>
     </div>

@@ -22,7 +22,7 @@
 }
 
 .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
-    color: var(--div-primary-color);
+    color: var(--primary-color);
     font-weight: 400;
 }
 
@@ -31,7 +31,7 @@
 .timeline-heading {
     font-family: var(--div-contenttext-font);
     text-align: center;
-    color: #0ae0e5;
+    color: var(--title-color);
     font-size: 3vw;
     padding: 16px;
 }
@@ -48,7 +48,7 @@
 
 .button-box .btn {
     border-radius: 20px;
-    background-color: var(--div-primary-color);
+    background-color: var(--primary-color);
     padding: 15px 20px;
     /* cursor: pointer; */
 }
